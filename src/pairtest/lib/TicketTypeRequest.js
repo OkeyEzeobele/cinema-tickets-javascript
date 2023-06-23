@@ -1,32 +1,27 @@
-/**
- * Immutable Object.
- */
-
 export default class TicketTypeRequest {
-  #type;
+  static prices = {
+    INFANT: 0,
+    CHILD: 10,
+    ADULT: 20
+  };
 
-  #noOfTickets;
-
-  constructor(type, noOfTickets) {
-    if (!this.#Type.includes(type)) {
-      throw new TypeError(`type must be ${this.#Type.slice(0, -1).join(', ')}, or ${this.#Type.slice(-1)}`);
+  constructor({ infant = 0, child = 0, adult = 0 } = {}) {
+    if (!Number.isInteger(infant) || !Number.isInteger(child) || !Number.isInteger(adult)) {
+      throw new TypeError('infant, child, and adult must be an integer');
     }
 
-    if (!Number.isInteger(noOfTickets)) {
-      throw new TypeError('noOfTickets must be an integer');
-    }
+    const ticketRequest = {
+      get infant() {
+        return infant;
+      },
+      get child() {
+        return child;
+      },
+      get adult() {
+        return adult;
+      }
+    };
 
-    this.#type = type;
-    this.#noOfTickets = noOfTickets;
+    return Object.freeze(ticketRequest);
   }
-
-  getNoOfTickets() {
-    return this.#noOfTickets;
-  }
-
-  getTicketType() {
-    return this.#type;
-  }
-
-  #Type = ['ADULT', 'CHILD', 'INFANT'];
 }
