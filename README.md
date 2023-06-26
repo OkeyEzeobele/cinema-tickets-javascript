@@ -1,6 +1,6 @@
 # Cinema Tickets
 
-Cinema Tickets is a built with NodeJS, a platform that allows for scalable network applications. This project is aimed at helping individuals purchase cinema tickets seamlessly. It's designed to be fast, lightweight and efficient due to the non-blocking nature of NodeJS.
+Cinema Tickets is built with NodeJS, a platform that allows for scalable network applications. This project is aimed at helping individuals purchase cinema tickets seamlessly. It's designed to be fast, lightweight and efficient due to the non-blocking nature of NodeJS.
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ To set up Cinema Tickets on your local machine, follow the instructions below:
 1. Clone this repository from GitHub. You can use the GitHub CLI or download it directly.
 
 ```
-git clone https://github.com/{YOUR_USERNAME}/cinema-tickets.git
+git clone https://github.com/{YOUR_USERNAME}/cinema-tickets-javascript.git
 ```
 
 2. Navigate to the project directory.
