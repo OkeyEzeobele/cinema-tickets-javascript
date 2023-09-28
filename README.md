@@ -28,7 +28,7 @@ To set up Cinema Tickets on your local machine, follow the instructions below:
 1. Clone this repository from GitHub. You can use the GitHub CLI or download it directly.
 
 ```
-git clone https://github.com/{YOUR_USERNAME}/cinema-tickets-javascript.git
+git clone https://github.com/OkeyEzeobele/cinema-tickets-javascript.git
 ```
 
 2. Navigate to the project directory.
